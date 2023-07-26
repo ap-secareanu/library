@@ -1,0 +1,9 @@
+@import "variables.scss";
+
+header {
+    background-color: var(--dark-red);
+
+    .big_text {
+        padding: 10px 0;
+    }
+}

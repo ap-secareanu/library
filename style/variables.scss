@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=KoHo:wght@300;400;700&family=Poppins:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
+
+:root {
+    --koho: 'KoHo', sans-serif;
+    --light-red: #903749;
+    --dark-red: #53354a;
+    --dark-blue: #2b2e4a;
+    --white: #eeeeee;
+    --grey: #222831;
+}
+
+.big_text {
+    font-size: 48px;
+    font-family: var(--koho);
+    color: var(--white);
+    font-weight: 700;
+    @media(max-width: 767px) {
+        font-size: 28px;           
+    }
+}
+
+.medium_text {
+    font-size: 28px;
+    font-family: var(--koho);
+    font-weight: 400;
+    color: var(--white);
+}
+
+.bold {
+    font-weight: 700;
+}
+
+.book_btn {
+    width: 100%;
+    padding: 5px 0;
+    color: var(--white);
+    border: none;
+    border-radius: 10px;
+}

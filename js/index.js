@@ -32,7 +32,7 @@ const resetGrid = () => {
 };
 
 const closeModals = () => {
-    bookForm.style.transform = "translate(-50%, -50%) scale(0)";
+    bookForm.style.transform = "translate(-47%, -50%) scale(0)";
     overlay.style.display = "none"
 }
 
@@ -141,7 +141,7 @@ const addToLibrary = (e) => {
 
 const displayForm = () => {
     if(bookForm.style.transform = "scale(0)") {
-        bookForm.style.transform = "translate(-50%, -50%) scale(1)";
+        bookForm.style.transform = "translate(-47%, -50%) scale(1)";
         overlay.style.display = "block"
 		document.querySelector('body').style.overflowY = 'hidden';
     };
@@ -149,7 +149,7 @@ const displayForm = () => {
 
 const hideForm = () => {
     if(overlay.style.display = "block") {
-        bookForm.style.transform = "translate(-50%, -50%) scale(0)";
+        bookForm.style.transform = "translate(-47%, -50%) scale(0)";
         overlay.style.display = "none"
 		document.querySelector('body').style.overflowX = 'scroll';
     }

@@ -100,7 +100,6 @@ const toggleRead = (e) => {
         readButton.classList.remove('read');
         readButton.classList.add('not_read');
     }
-    console.log(selectedBook, readButton);
 };
 
 const removeBook = (e) => {
@@ -111,7 +110,6 @@ const removeBook = (e) => {
     myLibrary.splice(indexOfBook, 1);
     resetGrid();
     displayBooks(myLibrary)
-    console.log(myLibrary);
 }
 
 const resetInput = () => {

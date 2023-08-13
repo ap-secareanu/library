@@ -5,15 +5,28 @@ const getBook = (library, title, author) => {
     return library.find(book => book.title === title && book.author === author)
 }
 
-function Book(title, author, pages, read) {
-    this.title = title;
-    this.author = author;
-    this.pages = pages;
-    this.read = read;
-    this.markRead = function() {
+// function Book(title, author, pages, read) {
+//     this.title = title;
+//     this.author = author;
+//     this.pages = pages;
+//     this.read = read;
+//     this.markRead = function() {
+//         this.read = !this.read
+//     }
+// };
+
+class Book {
+    constructor(title, author, pages, read) {
+        this.title = title;
+        this.author = author;
+        this.pages = pages;
+        this.read = read;
+    }
+
+    markRead() {
         this.read = !this.read
     }
-};
+}
 
 const getBookFromInput = () => {
     let title = document.getElementById('title').value;
